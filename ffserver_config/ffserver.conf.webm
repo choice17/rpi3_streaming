@@ -1,0 +1,31 @@
+Port 8090 
+MaxClients 2 
+MaxBandwidth 10000 
+NoDaemon 
+
+<Feed feed1.ffm> 
+File /tmp/feed1.ffm 
+FileMaxSize 5M 
+</Feed> 
+
+<Stream live/0>
+Feed feed1.ffm
+Format webm
+VideoCodec libvpx
+VideoFrameRate 15
+VideoBufferSize 80000
+VideoBitRate 4000
+VideoSize 640x480
+PreRoll 0
+Noaudio
+</Stream>
+
+<Stream status.html>
+Format status
+ACL allow localhost
+ACL allow 192.168.0.0 192.168.0.2
+</Stream>
+
+<Redirect index.html>
+URL http://choice17.github.io
+</Redirect>

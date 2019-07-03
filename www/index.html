@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Rpi3Project</title>
+    </head>
+    <body>
+        <div>
+            <p id="Text">Hello world</p>
+            <input type="number" maximun="100"/>
+        </div>
+        <div>
+            <button id="video_btn" onclick="run()"/>
+        </div>
+     
+        <div>
+            <iframe style="width:640px;height:480px" src="http://192.168.0.4:8090/live/0"></iframe>
+        </div>
+    </body>
+    <script type="text/javascript">
+        var video = document.getElementById("video");
+        toggle = 0;
+        function run() {
+        };
+    </script>
+
+</html>
