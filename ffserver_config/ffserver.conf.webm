@@ -1,7 +1,7 @@
-Port 8090 
+HttpPort 8090 
 MaxClients 2 
 MaxBandwidth 10000 
-NoDaemon 
+#NoDaemon 
 
 <Feed feed1.ffm> 
 File /tmp/feed1.ffm 

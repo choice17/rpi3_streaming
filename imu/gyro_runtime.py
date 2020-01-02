@@ -128,6 +128,7 @@ def run():
             accel_xout_norm = accel_xout / 16384.0
             accel_yout_norm = accel_yout / 16384.0
             accel_zout_norm = accel_zout / 16384.0
+
              
             # print "accel_xout: ", ("%6d" % accel_xout), " norm: ", accel_xout_norm
             # print "accel_yout: ", ("%6d" % accel_yout), " norm: ", accel_yout_norm
