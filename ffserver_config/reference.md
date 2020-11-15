@@ -23,3 +23,12 @@ cd ffmpeg/
 make -j4
 sudo make install
 </details>
+
+## success command  
+
+Machine rpi3B
+
+ffmpeg 4.2 h264_omx + sdl2 
+vlc
+
+ffmpeg -f video4linux2 -framerate 30 -video_size 640x480 -i /dev/video0 -pix_fmt yuv420p -c h264_omx -f rawvideo - | cvlc -vvv stream:///dev/stdin --sout '#rtp{sdp=rtsp://192.168.1.147:8554/test}' :demux=h264
